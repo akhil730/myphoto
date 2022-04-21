@@ -13,7 +13,7 @@ function App() {
         <Navbar />   
 
     <div className="App">
-    <img className="center" src= {require("./Akhil.png")} height = "500" width = "500" alt="image1"/>
+    <img className="center" src= {require("./photoo.png")} height = "500" width = "500" alt="image1"/>
     <h1>Akhil</h1>
     <img className = "center" src = {require("./babyImage.png")} alt = "image2" />
     <h1>Make your special days more beautiful with us</h1>
