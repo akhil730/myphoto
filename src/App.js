@@ -12,14 +12,14 @@ function App() {
       
         <Navbar />   
 
-    <div className="App">
-    <img className="center" src= {require("./Akhil.png")} height = "500" width = "500" alt="image1"/>
+    {/* <div className="App">
+    <img className="center" src= {require("./babyImage.png")} height = "500" width = "500" alt="image1" align= "right"/>
     <h1>Akhil</h1>
     <img className = "center" src = {require("./babyImage.png")} alt = "image2" />
     <h1>Make your special days more beautiful with us</h1>
     <img className = "center" src = {require("./babyImage.png")} alt = "image2"/>
     <h2> We give our best to make you happy</h2>
-      </div>
+      </div> */}
     </div>
   );
 }
