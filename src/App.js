@@ -1,4 +1,4 @@
-import React from "react";
+
 import './photoo.png';
 import './babyImage.png';
 import './App.css';
