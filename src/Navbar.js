@@ -32,30 +32,18 @@ export default function Navbar() {
   return (
     <Router>
       <div>
-        {/* <nav>
-          <ul>
-            <li>
-             <h1 align = "right" font = "sans-serif"><Link to="/">Home</Link></h1>
-            </li>
-            <li>
-             <h2 align = "right" font = "sans-serif"><Link to="/About">About</Link></h2> 
-            </li>
-            <li>
-             <h2 align = "right" font = "sans-serif"><Link to="/Contact">Contact</Link></h2> 
-            </li>
-          </ul>
-        </nav> */}
 
-        {/* A <Routes> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-
-           <span className="item_outer"> 
-           <span className="item_text"><h1  align = "right" font = "arial"><a  href="/">home</a></h1> 
-           </span>
-           </span>
-           <h1 align = "right" font = "arial"> <a align = "right" font = "sans-serif" href="/">who we are</a></h1> 
-           <h1 align = "right" font = "arial"> <a align = "right" font = "sans-serif" href="/About">About</a></h1> 
-           <h1 align = "right" font = "arial"><a className="center" font = "sans-serif" href="/Contact">Contact</a></h1> 
+           <div className="item_outer"> 
+           
+           <text align = "right" font = "arial"><a align = "right" font = "sans-serif" href="/">home</a></text>
+          
+           
+           <text align = "right" font = "arial"> <a  font = "sans-serif" href="/">who we are</a></text> 
+        
+           <text align = "right" font = "arial"> <a font = "sans-serif" href="/About">About</a></text> 
+           <text align = "right" font = "arial"><a font = "sans-serif" href="/Contact">Contact</a></text> 
+           </div>
+           </div>
         <Routes>
         <Route path="/" exact element = {<Home/>}/>
 
@@ -67,7 +55,7 @@ export default function Navbar() {
      
      
         </Routes>
-      </div>
+     
     </Router>
   );
 }

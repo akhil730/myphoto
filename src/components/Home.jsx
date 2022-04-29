@@ -5,10 +5,13 @@ import "../App.css"
 
 function Home() {
     return (
+  
          <div className="App">
-           
-            <img className = "img" src= {require("../photo.png")} height = "100" width = "348" alt="image1" align= "top-left"/>
-    <img className="center" src= {require("../babyImage.png")} height = "500" width = "500" alt="image1" align= "right"/>
+           <div>
+             
+           <text class = "caps"  font-style={"italian"} font-family={"Dosis"}> Aravind</text>
+          
+    <img src= {require("../babyImage.png")} height = "500" width = "500" alt="image1" align= "right"/>
     {/* <img className = "center" src = {require("../babyImage.png")} alt = "image2" /> */}
 
 
@@ -31,8 +34,7 @@ function Home() {
     </i>
      </p>
       </div> 
-     
-        
+      </div>
     )
 }
 
