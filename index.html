@@ -1,2 +1,37 @@
-# myphoto
- React portfolio of photogrpahy
+
+<html>
+    <head>
+        <title>React Hello World</title>
+        <script src="https://unpkg.com/react@15/dist/react.js"></script>
+        <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+        <script src= "./src/App.js"></script>
+    </head>
+    <body>
+<div id="bodyPartWrapper"></div>
+
+<script type="text/babel">
+      function App() {
+  return (
+  
+    <div id = "root">
+      
+        <Navbar />   
+
+    <div className="App">
+    <img className="center" src= {require("./photoo.png")} height = "500" width = "500" alt="image1"/>
+    <h1>Akhil</h1>
+    <img className = "center" src = {require("./babyImage.png")} alt = "image2" />
+    <h1>Make your special days more beautiful with us</h1>
+    <img className = "center" src = {require("./babyImage.png")} alt = "image2"/>
+    <h2> We give our best to make you happy</h2>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+ReactDOM.render(<App />, document.getElementById('bodyPartWrapper'));
+
+</script>
+    </body>
+</html>

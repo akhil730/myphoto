@@ -26,37 +26,36 @@ import {
 import Home from "./components/Home";
 import Contact from "./components/Contact";
 import About from "./components/About";
+import './App.css'
 
 export default function Navbar() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/About">About</Link>
-            </li>
-            <li>
-              <Link to="/Contact">Contact</Link>
-            </li>
-          </ul>
-        </nav>
 
-        {/* A <Routes> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-       
+           <div className="item_outer"> 
+           
+           <text align = "right" font = "arial"><a align = "right" font = "sans-serif" href="/">home</a></text>
+          
+           
+           <text align = "right" font = "arial"> <a  font = "sans-serif" href="/">who we are</a></text> 
+        
+           <text align = "right" font = "arial"> <a font = "sans-serif" href="/About">About</a></text> 
+           <text align = "right" font = "arial"><a font = "sans-serif" href="/Contact">Contact</a></text> 
+           </div>
+           </div>
         <Routes>
         <Route path="/" exact element = {<Home/>}/>
+
+        <Route path="/who we are" exact element = {<who we are/>}/>
   
-          <Route path="/About" exact element = {<About/>}/>
+          <Route  path="/About" element = {<About/>} />
    
           <Route path="/Contact" exact element = { <Contact/> }/>
      
+     
         </Routes>
-      </div>
+     
     </Router>
   );
 }

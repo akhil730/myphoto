@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  display: flex;
 }
 
 .App-logo {
@@ -37,8 +38,84 @@
   }
 }
 
+.home{
+  position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 1px;
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: -2px;
+    height: 0;
+    width: calc(100% + 2px);
+    -webkit-transition: all .15s ease;
+    -moz-transition: all .15s ease;
+    transition: all .15s ease;
+    height: 0.16em;
+  
+}
+
+.item_text{
+  position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 1px;
+}
+
+.item_outer{
+ display: inline;
+ float: right;
+}
+
+h2{
+  text-align: center;
+  display: inline-block;
+}
+
+img{
+ float: right;
+}
+
+.caps{
+  font-family: Dosis;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #993131;
+}
+
 .center{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  font-family: Dosis;
+  line-height: 50px;
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+  margin: 0;
+}
+
+.para{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Dosis;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 50px;
+}
+
+a.right {
+  position: absolute;
+  right: 0;
 }

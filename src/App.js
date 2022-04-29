@@ -1,14 +1,18 @@
-import React from "react";
+import React from 'react';
 import './photoo.png';
 import './babyImage.png';
 import './App.css';
 import Navbar from "./Navbar";
+import Button from '@mui/material/Button';
 
 
 function App() {
   return (
-  
-    <div>
+    <div class="header">
+    <header color='black'>
+    <Button variant="contained" style = { {flex : 2}}>Home</Button>
+
+    <div id = "root">
       
         <Navbar />   
 
@@ -19,7 +23,9 @@ function App() {
     <h1>Make your special days more beautiful with us</h1>
     <img className = "center" src = {require("./babyImage.png")} alt = "image2"/>
     <h2> We give our best to make you happy</h2>
-      </div>
+      </div> 
+    </div>
+    </header>
     </div>
   );
 }
